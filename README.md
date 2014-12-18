@@ -15,4 +15,4 @@ to allow users to securely communicate confidential, secretive or private textua
 internet.
 
 ### How do I get set up? ###
-Import into Eclipse Luna and run any Java EE 6 compliant webserver and you are good to go!
+Import into Eclipse Luna and run on any Java EE 6 compliant webserver.
