@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Generate your keys</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+<script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<script type="text/javascript" src="js/keygen.js"></script>
+<script src="js/forge-bundle.js"></script>
+</head>
+
+<body>
+<!-------------- First page for form ----------->
+<div data-role="page">
+<!-------------- First page header ----------->
+<div data-role="header" data-theme="a">
+<a href="index.html" data-icon="home" rel="external">Home</a>
+<h1>Your keys</h1>
+</div>
+<!-------------- First page main content ----------->
+<div data-role="main" class="ui-content">
+
+  	<label><span>Auto-generate your <a href="http://en.wikipedia.org/wiki/Public-key_cryptography">Public</a> and 
+  	<a href="http://en.wikipedia.org/wiki/Public-key_cryptography">Private</a> encryption keys below:</span></label>
+	
+	<center><a href id="gen" data-role="button" data-inline="true" data-theme="b">Click to generate your keypairs</a></center>	
+		<center><i style="color:#808080" id="a"><small>After click, wait few minutes for your keys to be generated.</small></i></center>
+	<br>
+	<label for=for="textarea-a">Your Public key: <span style="color:red">*</span></label>
+	<i style="color:#808080" id="a"><small>Note: Share this key "text" with the person 
+	who wishes to communicate with you. Copy and save the entire text below to a text file on your computer.</small></i>
+	<textarea name="textarea" id="pub"></textarea>
+	<label for=for="textarea-a">Your Private key: <span style="color:red">*</span></label>
+	<i style="color:#808080" id="a"><small>Note: This is your personal key. Do not share this key with anyone and keep it safe. 
+	You will need this key for decrypting your messages. Copy and save the entire text below to a text file on your computer.
+	</small></i>
+	<textarea name="textarea" id="priv"></textarea>
+	<br>
+	<br>
+	<br>
+	
+	<i style="color:#909090" id="a"><medium>Security: Your encryption keys will be generated on your browser. 
+	There is no outgoing/incoming connection. 
+	</medium></i>
+
+</div>
+</div>
+<!-------------------------------------------------------------
+End of First page
+-------------------------------------------------------------->
+
+</body>
+</html>

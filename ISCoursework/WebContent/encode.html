@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hide it</title>
+<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css">
+<script src="js/jquery-1.8.3.js"></script>
+ 
+ 
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+
+ 
+<!-- bootstrap just to have good looking page -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<link href="bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet" />
+ 
+<!-- we code these -->
+<link href="css/dropzone.css" type="text/css" rel="stylesheet" />
+<script src="js/myuploadfunction.js"></script>
+<script src="js/forge-bundle.js"></script>
+<script src="js/forge-calc.js"></script>
+
+<style>
+
+h1 {
+	font-family: 'Brush Script MT', cursive;
+	font-size: 54px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+}
+
+</style>
+
+
+
+</head>
+ 
+<body>
+<div id="header">
+</div>
+
+	<div class="ui-block-a"><a href="index.html" data-role="button"><b>Home</b></a></div>   
+
+    <h1 style="text-align:center">Hide it!<br></h1>
+ 
+ 	
+   
+<div style="width:700px;padding:20px;S">
+ 
+   
+	<form action="DoSubmit" method="POST">
+	<label>1. Copy and paste the receiver/recipients <a href="http://en.wikipedia.org/wiki/Public-key_cryptography">Public</a> encryption key:<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;No Public key? <a href ="KeyGen.html" >Click here</a></label> 
+	
+	<textarea id="publicKey" rows="4" cols="50" placeholder="Paste it here..."></textarea>
+
+	
+	<label>
+	2. Input your secret text:
+	<br>
+	<i style="color:#808080" id="a"><small>Note: Inputed text will be encrypted on your browser before 
+	being sent to our server using public key encryption.</small></i>
+	<p></p>
+	<textarea id="text2hide" name="text2hide" maxlength="50000" placeholder="Max 50000 characters..."></textarea>
+	</label>
+	
+	3. Click the button below to encipher your text into unreadable format using the provided Public key. 
+	<p>
+	<button id="encrypt" type="button">Encrypt</button><br>
+	</p>
+	
+	<label>
+    4. Please upload an image to conceal your text inside!<br>
+	    <input id="fileupload" type="file" name="files[]" data-url="upload" multiple>
+
+	 
+	    <div id="progress" class="progress">
+	        <div class="bar" style="width: 0%;"></div>
+	    </div>
+	    <b style="text-align:center"><i style="color:#808080"><small>Max File Size: 2 Mb</small></i></b>
+	 
+	 </label>
+	 
+	 <label>  
+	 5. Click the button below to securely conceal your text inside that image.
+	 </label>
+	 <p>   
+	  <input type="submit" value="Conceal and Download!">  
+	 </p> 
+	   
+	 </form>
+</div>
+</body>
+</html>
