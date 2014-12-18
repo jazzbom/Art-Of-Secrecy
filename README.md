@@ -6,7 +6,7 @@
 
 Web App based on Steganography for data hiding with AES and RSA encryption.
 * Version
-1.0
+v.1.0
 
 ### Description ###
 An online web-based Steganography tool for concealing secret text messages inside an image.
